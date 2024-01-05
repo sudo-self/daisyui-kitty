@@ -4,7 +4,7 @@
     let hereKitty = true;
     const handleMouseenter = () => (hereKitty = true);
     const handleMouseleave = () => (hereKitty = false)
-    let text = `boolean examples`;
+    let text = `boolean = here.kitty`;
     import { time } from './stores.js';
 
 const formatter = new Intl.DateTimeFormat('en', {
