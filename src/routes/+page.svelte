@@ -3,7 +3,7 @@
     let hereKitty = true;
     const handleMouseenter = () => (hereKitty = true);
     const handleMouseleave = () => (hereKitty = false)
-    let text = `here.kitty = true  here.kitty = false`;
+    let text = `Boolean`;
  
 
 </script>
@@ -36,4 +36,11 @@
 </style>
 
 
-    <textarea bind:value={text} />
+    <textarea bind:value={text} />boolean is raining = true
+
+
+
+<br><br><br><br><br><br><br><br>boolean is raining = false
+
+
+
