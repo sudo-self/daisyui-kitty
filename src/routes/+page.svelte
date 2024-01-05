@@ -1,13 +1,20 @@
 
+
 <script>
     let hereKitty = true;
     const handleMouseenter = () => (hereKitty = true);
     const handleMouseleave = () => (hereKitty = false)
     let text = `boolean examples`;
- 
+    import { time } from './stores.js';
+
+const formatter = new Intl.DateTimeFormat('en', {
+    hour12: true,
+    hour: 'numeric',
+    minute: '2-digit',
+    second: '2-digit'
+});
 
 </script>
-
 <svelte:body on:mouseenter={handleMouseenter} on:mouseleave={handleMouseleave} />
 
 <img
@@ -40,7 +47,7 @@
 
 
 
-<br><br><br><br><br><br><br><br>here.kitty = false
+<br><br>here.kitty = false<br><br><br><br><br>
 
-
+<h1>{formatter.format($time)}</h1>
 
