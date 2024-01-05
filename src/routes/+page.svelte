@@ -1,9 +1,11 @@
 
 <script>
     let hereKitty = true;
-
     const handleMouseenter = () => (hereKitty = true);
-    const handleMouseleave = () => (hereKitty = false);
+    const handleMouseleave = () => (hereKitty = false)
+    let text = `here.kitty = true  here.kitty = false`;
+ 
+
 </script>
 
 <svelte:body on:mouseenter={handleMouseenter} on:mouseleave={handleMouseleave} />
@@ -32,3 +34,6 @@
         overflow: hidden;
     }
 </style>
+
+
+    <textarea bind:value={text} />
